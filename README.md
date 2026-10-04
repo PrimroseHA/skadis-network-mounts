@@ -11,7 +11,7 @@ All parts are parametric OpenSCAD with ready-to-print STLs and full-plate 3MFs a
 | `smart-home-hubs/` | Heatmiser neoHub v2, SmartThings Hub v3, Lightwave Link Plus L2 | Measured dimensions in the `.scad` header |
 | `trigkey-g4-and-ssd/` | TRIGKEY G4 (N100) mini PC + 2 × 2.5" SSD enclosures | Pocket stands upright with ports down; sprung-bump grip |
 | `ugreen-ssd-rack/` | 2 × UGREEN USB-C 2.5" enclosures (model 80556) | Sprung bumps grip 14.6–16.6 mm thick |
-| `zigbee-dongle-and-power-strip/` | Sonoff ZBDongle-E clip + upright mains extension-lead holders | Lead holders sized for a 58.3 × 25.4 mm strip |
+| `zigbee-dongle-and-power-strip/` | Sonoff ZBDongle-E clip + upright mains extension-lead holders | Lead holders (v2) grip only the two plain ends of a 58.3 × 25.4 mm 6-way, so all sockets stay usable; the top hood slides on its bars to suit any lead length |
 | `combined-plates/` | Mixed full-bed plates of the above | |
 
 ## Customising
