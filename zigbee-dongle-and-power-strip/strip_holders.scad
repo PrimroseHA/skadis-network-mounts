@@ -3,9 +3,11 @@
 // the lead, so nothing may sit in front of its face anywhere along the sockets (v1's
 // 64 mm pocket + sleeve covered socket 1 and socket 6). v2 holds the two plain ends only:
 //  - strip_foot: shallow cup for the bottom (switch / neon) end. Floor + 20 mm cable slot
-//    open to the front, front lips only 10 mm tall (inside the plain end band); above
+//    open to the front, front lips only 6 mm tall (plug 6 starts ~10 mm from the end); above
 //    that the side walls stop 3.4 mm short of the face so overhanging plugs clear them.
-//  - strip_hood: cap over the top (surge-label) end, roof + side lips 18 mm deep. It
+//  - strip_hood: cap over the top (surge-label) end, roof + side lips 18 mm deep (plug 1
+//    starts ~30 mm down). The back half of each side wall is cut away so the round tab on
+//    the side of the head (about 4-12 mm down) passes through. It
 //    RIDES on its two hook bars: the grooves are 70 mm longer than a fixed part's, so it
 //    drops onto the lead's top end whatever the lead's length. Hook its bars in the pair
 //    of rows that puts the bar centre 45-85 mm below the lead's top end (bar centre =
@@ -33,7 +35,7 @@ low_z = back_t + sl_t - 3.4;     // side walls stop here where plugs can overhan
 
 // ---------- foot ----------
 cup_h   = 30;                    // side walls above the floor
-cup_lip = 10;                    // lip height above the floor
+cup_lip = 6;                     // lip height above the floor (plug 6 starts ~10 mm up)
 slot_w  = 20;
 foot_y0 = bar_y0;                // floor underside = bottom of the bar groove run-out
 foot_yd = foot_y0 + floor_t;     // lead's bottom end rests here
@@ -60,6 +62,7 @@ hood_d   = 18;                   // lips/walls reach this far down over the head
 roof_t   = 2.4;
 D_min    = 45;  D_max = 85;      // bar centre below the lead's top end (fitted range)
 lift     = 30;                   // extra travel to get the lead in
+tab_relief = 12;                 // side walls open from the back plate out to here
 spine_w  = 2*bx + hook_w + 2*dv_flare + 8;
 spine_y0 = -(D_max + lift) + bar_y0 - 2;
 
@@ -72,6 +75,8 @@ module hood() difference() {
     translate([-in_x/2 + lip, -hood_d - 1, back_t]) cube([in_x - 2*lip, hood_d + 1, front]);
     for (x = [-bx, bx]) translate([x, 0, 0])
         bar_body(dv_clr, spine_y0 - 1, -D_min + bar_y1 + dv_clr);
+    // side-wall relief for the head's round tab: back 12 mm of each wall, full hood depth
+    translate([-out_x/2 - 1, -hood_d - 1, back_t]) cube([out_x + 2, hood_d + 1, tab_relief]);
 }
 
 // ---------- views / print poses ----------
