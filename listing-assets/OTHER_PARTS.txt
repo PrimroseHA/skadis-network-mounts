@@ -1,0 +1,10 @@
+Other parts in my SKÅDIS network rack (all hang on the same hook bars):
+- Hook bars (start here): https://www.printables.com/model/1866142
+- TP-Link Omada POE380S injector: https://www.printables.com/model/1866145
+- TP-Link TL-SG1024D 24-port switch: https://www.printables.com/model/1866147
+- Heatmiser neoHub v2: https://www.printables.com/model/1866148
+- Samsung SmartThings Hub v3: https://www.printables.com/model/1866154
+- Lightwave Link Plus L2: https://www.printables.com/model/1866155
+- TRIGKEY G4 mini PC: https://www.printables.com/model/1866149
+- 2 x UGREEN 2.5" SSD enclosures: https://www.printables.com/model/1866157
+- Sonoff ZBDongle-E Zigbee dongle: https://www.printables.com/model/1866160
