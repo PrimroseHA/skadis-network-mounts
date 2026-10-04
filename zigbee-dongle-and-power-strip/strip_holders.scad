@@ -11,7 +11,7 @@
 //    RIDES on its two hook bars: the grooves are 70 mm longer than a fixed part's, so it
 //    drops onto the lead's top end whatever the lead's length. Hook its bars in the pair
 //    of rows that puts the bar centre 45-85 mm below the lead's top end (bar centre =
-//    midway between the bar's two hooks). Lift the hood up to 30 mm more to fit the lead.
+//    midway between the bar's two hooks). Lift the hood up to 12 mm more to fit the lead.
 // Fit the lead: hook all 4 bars, slide the hood on from above, lift it, feed the top of
 // the lead up into the hood, swing the bottom in over the foot's lips, lower it into
 // the foot and the hood drops back onto it.
@@ -61,7 +61,7 @@ module foot() difference() {
 hood_d   = 18;                   // lips/walls reach this far down over the head
 roof_t   = 2.4;
 D_min    = 45;  D_max = 85;      // bar centre below the lead's top end (fitted range)
-lift     = 30;                   // extra travel to get the lead in
+lift     = 12;                   // extra travel to get the lead in (clears the 6 mm foot lips)
 tab_relief = 12;                 // side walls open from the back plate out to here
 spine_w  = 2*bx + hook_w + 2*dv_flare + 8;
 spine_y0 = -(D_max + lift) + bar_y0 - 2;
